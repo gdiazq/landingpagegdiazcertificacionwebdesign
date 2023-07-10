@@ -1,13 +1,30 @@
-body{
-    background-color: white;
+.bg-img {
+    background-image: url('../img/jumbotron.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
-h1{
-    color:darkcyan;
-    background-color: rgb(165, 16, 16);
-}
-h2{
-    color:rgb(163, 194, 78);
-}
-p{
-    color:white;
-}
+
+.img-responsive {
+    display: block; 
+    max-width: 100%;
+    width: auto;
+ }
+
+ @media only screen and (max-width: 768px) {
+    .img-responsive {
+        height: 300px;
+    }
+ }
+
+ @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .img-responsive {
+        height: 250px;
+    }
+
+    #front {
+        position: relative;
+        bottom: 75px;
+     }
+ }

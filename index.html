@@ -3,23 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Style CSS-->
-    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <!--Bulma CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Stylesheet css-->
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
     <!-- Script JS-->
     <script src="assets/js/script.js"></script>
-    <title>Personal Portafolio Website</title>
+    <title>adhoc Portafolio Website</title>
 </head>
 
 <body>
-    <h1>Hola Mundo</h1>
-    <h2>Guillermo Diaz</h2>
-    <h3>Desde Azure Ubuntu Server</h3>
-    <h4>Hola Denuev</h4>
-    <h5>Hola desde Azure</h5>
-    <h6>Intentando trabajar con gitbucket y github a la misma vez</h6>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum ipsam animi nihil quidem deleniti, enim, rem iste illum eveniet architecto debitis veniam doloribus dolorum. Unde dolorum sapiente impedit sint et!</p>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure corporis nam, omnis beatae fugit sed voluptatibus nobis ea dolorem, similique officia perspiciatis inventore repellat ipsa delectus vero quidem sunt saepe.</p>
-    </div>
+
+    <!-- Nav Bar -->
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="./assets/img/logo.png" width="112" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            
+        </div>
+          
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item is-active">
+                    Home
+                </a>
+          
+                <a class="navbar-item">
+                    About Us
+                </a>
+
+                <a class="navbar-item">
+                    Our Team
+                </a>
+
+                <a class="navbar-item">
+                    Contact Us
+                </a>
+          
+            </div>
+          
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a class="button is-success is-responsive">
+                        <strong>Sign up</strong>
+                    </a>
+                    <a class="button is-light is-responsive">
+                        Log in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Front Panel -->
+    <section class="hero is-medium is-link">
+        <div class="hero-body bg-img img-responsive">
+            <div id="front" class="has-text-centered has-background-primary">
+                <h1 class="title is-size-1-mobile is-size-2-tablet is-size-1-widescreen">
+                    Administration made easy
+                </h1>
+                <h3 class="subtitle is-size-4-mobile is-size-3-tablet is-size-3-widescreen">
+                    Adhoc is an on-demand administrative service for your company growth
+                </h3>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Text Panel -->
+    <section class="content my-5">
+        <p class="has-text-left is-italic is-size-6-mobile is-size-4-tablet is-size-3-widescreen mx-2">
+            "Thank to Adhoc we now have beatiful, faithful service every day. Our
+            customer are happy and engagement has drastically increased. Highly
+            recommend!"
+        </p>
+        <p class="is-size-7-mobile is-size-6-tablet is-size-5-widescreen has-text-right has-text-weight-light is-italic mx-5 mb-6">
+            <span class="has-text-weight-bold">-Dave Ellavar,</span> Academyof Code
+        </p>
+    </section>
+
+    <!-- Title Image -->
+    <section class="content has-text-centered mb-1">
+        <p class="is-size-5-mobile is-size-3-tablet is-size-1-widescreen">
+            Why Adhoc?
+        </p>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <figure class="is-flex is-flex-direction-column is-align-items-center is-align-content-center">
+                        <img src="./assets/img/experienced.png" alt="Panel Image Expericenced">
+                        <p class="is-size-6-mobile is-size-5-tablet is-size-5-widescreen has-text-centered mt-3">Over 9000 happy clients, and we learn something new form each one.</p>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure class="is-flex is-flex-direction-column is-align-items-center is-align-content-center">
+                        <img src="./assets/img/fun.png" alt="Panel Image Fun">
+                        <p class="is-size-6-mobile is-size-5-tablet is-size-5-widescreen has-text-centered mt-3">Administration? Fun? Yea, somehow we make it happen.</p>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure class="is-flex is-flex-direction-column is-align-items-center              is-align-content-center">
+                        <img src="./assets/img/smart.png" alt="Panel Image Smart">
+                        <p class="is-size-6-mobile is-size-5-tablet is-size-5-widescreen has-text-centered mt-3">Innovative solutions to the trickest of every tasks.</p>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 </body>
 </html>
